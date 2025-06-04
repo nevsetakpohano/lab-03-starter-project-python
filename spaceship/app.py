@@ -24,5 +24,5 @@ def make_app(settings: Settings) -> FastAPI:
     @app.get('/', include_in_schema=False, response_class=FileResponse)
     async def root() -> str:
         return 'build/index.html'
-
+    print("Hello, Aryna") 
     return app
